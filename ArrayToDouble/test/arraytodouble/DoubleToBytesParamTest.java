@@ -1,6 +1,6 @@
 package arraytodouble;
 
-import arraytodouble.DoubleToBytes;
+import static DoubleToBytes;
 import java.util.Arrays;
 import java.util.Collection;
 import org.junit.Test;

@@ -1,11 +1,3 @@
-
-/**
- *  Converting a double to an eight-byte array and back to a double.
- *
- *  @author     Alex Simonelis
- *  @version    October, 2011
- *
- */
 public class DoubleToBytes
 {
     public static void main(String s[])
@@ -17,7 +9,15 @@ public class DoubleToBytes
 	}
 
 
-	public static byte [] doubleToByteArray (double numDouble)
+	/**
+         * Converts a double to a byte array.
+         * 
+         * @author Erika Bourque
+         * @author Jonathan Bizier
+         * @param numDouble
+         * @return 
+         */
+        public static byte [] doubleToByteArray (double numDouble)
 	{
 		byte [] arrayByte = new byte [8];
 		long numLong;
