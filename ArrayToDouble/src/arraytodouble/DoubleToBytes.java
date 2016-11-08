@@ -6,8 +6,6 @@
  *  @version    October, 2011
  *
  */
-
-
 public class DoubleToBytes
 {
     public static void main(String s[])
@@ -27,9 +25,9 @@ public class DoubleToBytes
 
                 for(int i = arrayByte.length - 1; i >= 0; i--)
                 {
-                    // Get the last 8 bits of the long
+                    // Get the last 8 bits of the long.
                     arrayByte[i] = (byte)(numLong & 0xFFL);
-                    // Shift the bits to the right
+                    // Shift the bits to the right, moving the next bits for copying to the end.
                     numLong = numLong >> 8;
                 }
 
