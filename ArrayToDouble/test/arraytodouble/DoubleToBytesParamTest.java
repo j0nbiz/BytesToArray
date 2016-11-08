@@ -1,6 +1,6 @@
 package arraytodouble;
 
-import static DoubleToBytes;
+import arraytodouble.DoubleToBytes;
 import java.util.Arrays;
 import java.util.Collection;
 import org.junit.Test;
@@ -35,7 +35,7 @@ public class DoubleToBytesParamTest {
     @Test
     public void testMethod()
     {
-        Byte[] temp;
+        byte[] temp;
         Double result;
         
         // Action

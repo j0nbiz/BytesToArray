@@ -1,3 +1,5 @@
+package arraytodouble;
+
 public class DoubleToBytes
 {
     public static void main(String s[])
