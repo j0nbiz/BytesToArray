@@ -23,16 +23,15 @@ public class DoubleToBytes
 	{
 		byte [] arrayByte = new byte [8];
 		long numLong;
-
 		numLong = Double.doubleToRawLongBits(numDouble);
 
-
-
-
-
-
-
-
+                for(int i = arrayByte.length - 1; i >= 0; i--)
+                {
+                    // 
+                    arrayByte[i] = (byte)(numLong & 0x00000000000000FFL);
+                    // Shift the bits to the right
+                    numLong = numLong >> 8;
+                }
 
 		return arrayByte;
 	}
