@@ -27,8 +27,8 @@ public class DoubleToBytes
 
                 for(int i = arrayByte.length - 1; i >= 0; i--)
                 {
-                    // 
-                    arrayByte[i] = (byte)(numLong & 0x00000000000000FFL);
+                    // Get the last 8 bits of the long
+                    arrayByte[i] = (byte)(numLong & 0xFFL);
                     // Shift the bits to the right
                     numLong = numLong >> 8;
                 }
